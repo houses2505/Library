@@ -1,0 +1,5 @@
+{% for libro in object_list %}
+	 <body background="battlefield_3___red_by_vk4non-d5xqptd.png">
+     <li>{{ libro }} <a href="{% url 'editar_libro' libro.pk %}" title="">Editar</a> <a href="{% url 'eliminar_libro' libro.pk %}" title="">Eliminar</a></li>	
+     
+{% endfor %}
